@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+              
+    background-image:url(pics/loginback1.png);
+    background-size:contain;
+    background-position: center;
+    height: auto;
+    width: auto;
+ }
+ main{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2em;
+    margin: 2rem;   
+}
+
+section{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow:column nowrap; /* 
+    border: 10px solid pink; */
+    padding: 3px;
+    gap: 40px;
+    height: 300px;
+    width: 00px;
+    margin: 100px;
+    font-weight: bolder;
+    
+}
+
+section input[type="text"]{
+    width: 250px;
+    border: 4px;
+    border-radius: 5px;
+    border-color:5px solid black;
+    height: 30px;
+    }
+    section input[type="password"]{
+        width: 250px;
+        border: 5px;
+        border-radius: 4px;
+        border-color: black;
+        height: 30px;
+        
+        }
+ 
+
+section button{
+width: 150px;
+border: 4px;
+border-color: black;
+height: 30px;
+font-weight: bolder;
+display: block;
+align-self: center;
+
+}
+
+.button:hover{
+    background-image: linear-gradient(45deg,blue,rgb(152, 189, 189));
+    
+    }
+
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+  
+}
+
+.d1{
+    display: flex;
+    flex-flow: rowwrap;
+    gap: 10px;
+    font-style: italic;
+}
+
+.d2{
+    display: flex;
+    flex-flow: rowwrap;
+    gap: 15px;
+    font-style: italic;
+}

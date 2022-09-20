@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ main{
+    position: relative;
+    height: 100vh;
+    width: auto;
+ }
+/*  main p{
+   font-size: 1rem;
+ }
+ */
+ header video{
+    display: block;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+ }
+
+
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column wrap;
+    /* border-bottom: 5px solid rgb(255, 255, 255); */
+    justify-content: center;
+    align-items: center;
+}
+ /* header img{
+    display: block;
+    position: absolute;
+    align-self: center;
+
+    height: max(20%,40%);
+    width: auto; */
+
+footer{
+    position: relative;
+   text-align: center;
+   background-color: #333;
+   font-size:2rem ;
+   padding: 2rem;
+   color: papayawhip;
+}
+
+header h1{
+    position: absolute;
+    align-self: center;
+    top: 59.5%;
+    font-size:min(2rem,1.5rem);
+}
+ header nav {
+   position:absolute;
+   top: 0;
+   height: 80px;
+   width: 100%;
+   z-index: 2;
+   background-image: linear-gradient(180deg,#8e0e00,#1f1c18);
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* border: 3px solid yellow;
+    border-left: 0;
+    border-right: 0; */
+  /*   height: 5rem; */
+    font-weight: bolder;
+    color: white;
+    font-size: larger;
+    align-items: center;
+   
+
+}
+ul li{
+    
+    padding: 5px;
+    width: 150px;
+    text-align: center;
+    
+}
+ul li:hover{
+    border: 3px solid beige;
+    border-radius: 5px;
+    margin-inline: 1rem;
+    /* background-image: linear-gradient(beige,pink);
+ */
+}
+nav img{
+    width: 80px;
+    height: 80px;
+    border: 2px solid hotpink;
+    padding-left: 1px;
+    padding-bottom: 0;
+} 
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(pics/iceBack4.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    min-width:350px;
+    background-image: linear-gradient(to right,#daa520,rgb(218, 137, 32),crimson);
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.card img{
+    display: block;
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: 3rem;
+    border: 3px solid #333;
+
+}
+
+.card figure figcaption{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Philosopher;
+}
+
+
+
+.foot{
+    text-align: center;
+    font-family: Cinzel;
+    font-size: 1.7rem;
+    background-image:linear-gradient(to right,#daa520,rgb(218, 137, 32),crimson);
+    padding: 2rem;
+}
+
+
+@media screen  and (max-width:975px){
+    .head{
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    
+    .head ul{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .card{
+        min-width: 200px;
+        scroll-margin-top: 7rem;
+    }
+   
+    .foot{
+        font-size: 0.8rem;
+    }
+   
+}
+
+@media screen and (max-width:640px){
+
+    
+    .head{
+        position: sticky;
+        top: 0;
+    }
+    
+    .head h1{
+        display:none;
+    }
+    
+    .head ul{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .head ul li a{
+        font-size: 0.8rem;
+    }
+    .card{
+        min-width: 200px;
+        scroll-margin-top: 9.8rem;
+    }
+
+
+}
